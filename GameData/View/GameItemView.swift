@@ -14,24 +14,11 @@ struct GameItemView: View {
     var body: some View {
     
         VStack{
-            
-            if user.backgroundImage.isEmpty {
-                ProgressView()
-            } else {
-                AsyncImage(url: URL(string: user.backgroundImage)!) { image in
-                    image
-                        .resizable()
-                        .frame(width: 130, height: 130)
-                        .clipped()
-                        .clipShape(Circle())
-                } placeholder: {
-                    Image("imagen_predeterminada")
-                }
+            Image(user.backgroundImage)
                 
-                
-            Text(user.name).font(.largeTitle)
-            Text(user.released).font(.title)
-            }
+            Text(user.name)
+            Text(user.released)
+           
         }.onAppear{
             user.fetch(id: id)
         }
@@ -45,5 +32,5 @@ struct GameItemView: View {
 //}
 
 #Preview {
-    GameItemView(id: 3498, user: GameItemViewModel())
+    GameItemView(id: 3498)
 }

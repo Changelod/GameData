@@ -25,13 +25,13 @@ import Foundation
 struct APIToken {
     static let token: String = "71850a1c82b14a79be34555ece9a8b70"
 }
-struct Modelo2: Decodable {
-    let results:[GameResult]
-}
-
-struct GameUser: Decodable{
-    var results : GameResult
-}
+//struct Modelo2: Decodable {
+//    let results:[GameResult]
+//}
+//
+//struct GameUser: Decodable{
+//    var results : GameResult
+//}
 
 struct GameResult: Decodable {
     let id: Int

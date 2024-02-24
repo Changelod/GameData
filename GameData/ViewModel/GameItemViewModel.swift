@@ -8,7 +8,7 @@
 import Foundation
 
 class GameItemViewModel: ObservableObject {
-    
+    @Published var id = 1
     @Published var name = ""
     @Published var released = ""
     @Published var backgroundImage = ""
@@ -20,11 +20,12 @@ class GameItemViewModel: ObservableObject {
             
             guard let data = data else { return}
             do{
-                let json = try JSONDecoder().decode(GameUser.self, from: data)
+                let json = try JSONDecoder().decode(GameResult.self, from: data)
                 DispatchQueue.main.async {
-                    self.name = json.results.name!
-                    self.released = json.results.released!
-                    self.backgroundImage = json.results.backgroundImage?.absoluteString ?? ""
+                    self.id = json.id
+                    self.name = json.name!
+                    self.released = json.released!
+                    self.backgroundImage = json.backgroundImage?.absoluteString ?? ""
 
                 }
             }catch let error as NSError{
@@ -33,4 +34,3 @@ class GameItemViewModel: ObservableObject {
         }.resume()
     }
 }
-
