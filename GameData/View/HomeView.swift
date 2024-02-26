@@ -22,7 +22,7 @@ struct HomeView: View {
     HomeView()
 }
 
-let game: [Game] =  [Game( photo: "1", name: "game 1"),
+let game: [Game] =  [Game( photo: "1", name: "games 1"),
                        Game( photo: "2", name: "game 2"),
                      Game( photo: "3", name: "game 3"),
                      Game( photo: "4", name: "game 4"),
