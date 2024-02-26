@@ -30,7 +30,7 @@ struct GameView: View {
                                     Rectangle()
                                         .stroke(LinearGradient(gradient: .init(colors: [Color.purple, Color.red, Color.orange]), startPoint: .topTrailing, endPoint: .topLeading), lineWidth: 4)
                                 )
-                                .overlay(Circle().stroke(Color.black, lineWidth: 1))
+                                .overlay(Rectangle().stroke(Color.black, lineWidth: 1))
     
                             Text(game.name)
                                 .font(.title3)
