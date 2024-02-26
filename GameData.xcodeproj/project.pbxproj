@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F51F29022B87019C0075C161 /* GameDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F29012B87019C0075C161 /* GameDataApp.swift */; };
-		F51F29042B87019C0075C161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F29032B87019C0075C161 /* ContentView.swift */; };
 		F51F29062B87019F0075C161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51F29052B87019F0075C161 /* Assets.xcassets */; };
 		F51F29092B87019F0075C161 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51F29082B87019F0075C161 /* Preview Assets.xcassets */; };
 		F51F29102B8716A00075C161 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F290F2B8716A00075C161 /* TabBar.swift */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		F51F28FE2B87019C0075C161 /* GameData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51F29012B87019C0075C161 /* GameDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataApp.swift; sourceTree = "<group>"; };
-		F51F29032B87019C0075C161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F51F29052B87019F0075C161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F51F29082B87019F0075C161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F51F290F2B8716A00075C161 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				F51F29182B8780100075C161 /* Model */,
 				F51F291B2B8799100075C161 /* ViewModel */,
 				F51F29012B87019C0075C161 /* GameDataApp.swift */,
-				F51F29032B87019C0075C161 /* ContentView.swift */,
 				F51F290F2B8716A00075C161 /* TabBar.swift */,
 				F51F29052B87019F0075C161 /* Assets.xcassets */,
 				F51F29072B87019F0075C161 /* Preview Content */,
@@ -184,7 +181,6 @@
 			files = (
 				F51F29172B877D7B0075C161 /* PlayingView.swift in Sources */,
 				F51F29102B8716A00075C161 /* TabBar.swift in Sources */,
-				F51F29042B87019C0075C161 /* ContentView.swift in Sources */,
 				F51F291A2B87962F0075C161 /* GameItemView.swift in Sources */,
 				F51F29152B877D6B0075C161 /* TopView.swift in Sources */,
 				F51F29132B877D5C0075C161 /* HomeView.swift in Sources */,

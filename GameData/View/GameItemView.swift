@@ -21,7 +21,7 @@ struct GameView: View {
                 HStack {
                     ForEach(game) { game in
                         VStack {
-                            Image(game.photo)
+                            Image(game.backgroundImage)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 380)
@@ -48,16 +48,16 @@ struct GameView: View {
 
 
 #Preview {
-    GameView(game: [Game( photo: "1", name: "game 1"),
-                     Game( photo: "2", name: "game 2"),
-                     Game( photo: "3", name: "game 3"),
-                     Game( photo: "4", name: "game 4"),
-                     Game( photo: "1", name: "game 5"),
-                     Game( photo: "2", name: "game 6")])
+    GameView(game: [Game( backgroundImage: "1", name: "game 1"),
+                     Game( backgroundImage: "2", name: "game 2"),
+                     Game( backgroundImage: "3", name: "game 3"),
+                     Game( backgroundImage: "4", name: "game 4"),
+                     Game( backgroundImage: "1", name: "game 5"),
+                     Game( backgroundImage: "2", name: "game 6")])
 }
 
 struct Game: Identifiable{
     var id = UUID()
-    let photo: String
+    let backgroundImage: String
     let name : String
 }
