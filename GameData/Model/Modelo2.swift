@@ -33,15 +33,15 @@ struct APIToken {
 //    var results : GameResult
 //}
 
-struct GameResult: Decodable {
-    let id: Int
-    let name: String?
-    let released: String?
-    let backgroundImage: URL?
-    let metacritic: Int?
-    let genres: [GameGenres]?
-}
-
-struct GameGenres: Codable {
-    let name: String
-}
+//struct GameResult: Decodable {
+//    let id: Int
+//    let name: String?
+//    let released: String?
+//    let backgroundImage: URL?
+//    let metacritic: Int?
+//    let genres: [GameGenres]?
+//}
+//
+//struct GameGenres: Codable {
+//    let name: String
+//}
